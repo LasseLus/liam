@@ -24,6 +24,8 @@ void ERROR::flag(int error_number_) {
   Mower->stopCutter();
   Mower->stop();
 
+  myLcd->clear();	
+	
   mylcd->setCursor(5,0);
   mylcd->print("Error!!");
   switch (error_number_) {
